@@ -1,0 +1,7 @@
+# Set VARIABLEs here to allow variation in your plugin
+
+VARIABLE tumbller_target_name TUMBLLER
+
+TARGET TUMBLLER <%= tumbller_target_name %>
+INTERFACE <%= tumbller_target_name %>_INT openc3/interfaces/tcpip_client_interface.py host.docker.internal 8080 8080 10.0 None LENGTH 0 32 0 1 BIG_ENDIAN 0 None 100 True
+  MAP_TARGET <%= tumbller_target_name %>

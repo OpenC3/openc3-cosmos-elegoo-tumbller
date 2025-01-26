@@ -1,0 +1,87 @@
+SCREEN AUTO AUTO 1.0
+
+HORIZONTAL
+  VERTICAL
+    LINEGRAPH TUMBLLER STATUS ANGLE
+    LABELVALUE TUMBLLER STATUS ANGLE
+  END
+  VERTICAL
+    HORIZONTAL
+      SPACER
+      TITLE "Motion"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Forward' "api.cmd('TUMBLLER FORWARD')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Left' "api.cmd('TUMBLLER LEFT')"
+      BUTTON 'Stop' "api.cmd('TUMBLLER STOP')"
+      BUTTON 'Right' "api.cmd('TUMBLLER RIGHT')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Backward' "api.cmd('TUMBLLER BACKWARD')"
+      SPACER
+    END
+    HORIZONTALLINE
+    HORIZONTAL
+      SPACER
+      TITLE "LED"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Up' "api.cmd('TUMBLLER LED_UP')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Mid' "api.cmd('TUMBLLER LED_MID')"
+      BUTTON 'Off' "api.cmd('TUMBLLER LED_OFF')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Down' "api.cmd('TUMBLLER LED_DOWN')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Change Mode' "api.cmd('TUMBLLER LED_NEXT_MODE')"
+      SPACER
+    END
+  END
+  VERTICAL
+    TITLE "Control Modes"
+    HORIZONTAL
+      SPACER
+      BUTTON 'Follow 1' "api.cmd('TUMBLLER FOLLOW_MODE')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Follow 2' "api.cmd('TUMBLLER FOLLOW2_MODE')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Obstacle Avoid' "api.cmd('TUMBLLER OBSTACLE_MODE')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Fall Down' "api.cmd('TUMBLLER FALL_DOWN')"
+      SPACER
+    END
+    HORIZONTAL
+      SPACER
+      BUTTON 'Stand Up' "api.cmd('TUMBLLER STAND_UP')"
+      SPACER
+    END
+  END
+END
